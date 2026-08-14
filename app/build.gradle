@@ -1,0 +1,23 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'edu.umn.cs.csci3081w.lab8.FiveStudents'
+}
+
+version = '1.0'
