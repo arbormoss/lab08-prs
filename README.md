@@ -2,32 +2,46 @@
 
 AI Usage level 0: No AI allowed
 
-In this assignment, you are asked to use [GitHub issues](https://guides.github.com/features/issues/) and [pull requests](https://guides.github.com/activities/hello-world/) to resolve software bugs. You will use what you learn in this lab in the project iterations.
+[Video Walkthrough](TODO!!)
 
-For this assignment you will need Gradle, Java, and IntelliJ IDEA. We suggest you use a lab machine (in [Keller Hall 1-262](https://cse.umn.edu/cseit/classrooms-labs)), as Gradle, Java, and IntelliJ IDEA are already installed on the machine. You can also access a lab machine remotely using this link https://csel-kh1262-X.cselabs.umn.edu, where X is the machine identifier. For more information on how to access the lab machines remotely, please refer to the "Lab 1: Git" instructions. Finally, [VOLE3D](https://cse.umn.edu/cseit/self-help-guides/virtual-online-linux-environment-vole) also has the same technologies and that is another option available to you.
+[Lab Resources Repository](https://github.com/CSCI3081WFa26/lab-resources)
 
-Before starting the lab, please remember the following important items:
+The goal of this assignment is to get comfortable using GitHub Issues and Pull Requests (PRs)[^1].
 
-**IMPORTANT: Inside the lab machine, only files saved to your home folder (e.g., `/home/butle547`) will be persisted across sessions. If you log out, make sure your progress is pushed to GitHub or saved in the home folder.**
+GitHub Issues are like a discussion board attached to the repository.
+They can be used to plan work, report bugs, and talk about the project.
+Pull Requests are a request to merge changes from one branch onto another branch (usually merge changes from a development branch onto `dev` or `main`).
+They have a description to describe the purpose of the changes and what changes are made.
 
-One of the reasons you might not be able to log into a lab machine is that you reached your CSE Labs Account disk quota. To free space, please use these [instructions](https://cse.umn.edu/cseit/self-help-guides/disk-quota-free-your-space). (In some cases, you might need to SSH into a CSE classroom or lab machine to complete the instructions.)
-
-Remember to log out from the lab machine when you completed your work session (especially if you are working remotely), as this operation will allow other students to use the same machine.
+While you aren't working with other people here, remember that the goal of using Issues and Pull Requests is to communicate with other people working on the project.
 
 ## Lab Instructions
 
-In the following instructions, we use the term "REPO" to indicate the repository that Github Classroom created for you. **Make sure you use this repository and not a repository you created on your own.** Please contact us on Piazza in case you experience issues with the creation of your repository.
+You will walk through identifying, reporting, and resolving **two bugs*.
 
-At a high level, in this lab you need to identify, report, and resolve **two bugs**. Specifically, to complete this lab assignment, you will to perform the following tasks **twice**.
+These steps would are often done by different people, with a different person identifying and reporting a bug than the person who fixes it.
+In this lab, you will be doing both sides.
 
- * Create a GitHub issue to report a bug on GitHub
- * Label the issues as a bug and assign the issue to yourself on GitHub
- * Fix the bug in the code
- * Create a GitHub pull request for the fix on GitHub
- * Link the pull request to the issue on GitHub
- * Merge the pull request into the main branch of REPO on GitHub
+Make sure to do these steps **twice**:
 
-You need to perform this task **twice** as there are **two bugs** in the REPO code. The video tutorial of this lab shows how to perform the tasks for one of the bugs.
+1. Find a bug in the software.
+2. Create a GitHub issue to report the bug on Github.
+3. Label the issue as a bug and assign the issue to yourself.
+4. Fix the bug in the code.
+5. Push your branch and create a Pull Request on GitHub.
+6. Link the Pull Request to the Issue on Github.
+7. Merge the Pull Request into the `main` branch using the GitHub web interface.
+
+The [Video Walkthrough](TODO!!) shows how to do each of these steps for the first bug.
+You will need to do these steps again for the second bug on your own.
+
+<!--
+
+Above here is rewritten so far.
+
+Below here is TODO.
+
+-->
 
 **The code provided in REPO is an implementation of the FiveStudents software**. You can see the requirements in Section "FiveStudents Requirements" (these requirements are the same as the ones of "Lab 7: Design Patterns"). The implementation contains **two bugs**. The first bug can be revealed by running the program with the following inputs `hamburger grilledmushrooms`. You should identify the second bug by inspecting the code. (You can assume that the inputs to the program are well-formatted. That is, the second bug can be triggered with a well-formatted input.)
 
@@ -76,3 +90,6 @@ hotdog grilled mushrooms jalapeno peppers
 ### Additional References
 * [GitHub Issues](https://guides.github.com/features/issues/)
 * [GitHub Pull Requests](https://guides.github.com/activities/hello-world/)
+
+[^1]: Pull Requests are also called "Change Requests" sometimes. Change Request is closer to what it actually means now. You are requesting a change to the code. "Pull Request" comes from before large Git remote platforms like GitHub. You would ask another person to "Pull" your code into the repository on their computer.
+
