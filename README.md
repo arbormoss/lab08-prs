@@ -35,11 +35,24 @@ Make sure to do these steps **twice**:
 The [Video Walkthrough](TODO!!) shows how to do each of these steps for the first bug.
 You will need to do these steps again for the second bug on your own.
 
+### FiveStudents Software
+
+In this lab, you will be working on the FiveStudents software.
+
+You can still run the program with this command:
+
+```sh
+./gradlew run --args='<item name> <toppings>'
+```
+
+`<item name>` is the fast food item.
+`<toppings>` is a list of toppings, separated by commas without spaces in-between.
+
+### Detailed Steps
+
 <!--
 
-Above here is rewritten so far.
-
-Below here is TODO.
+This section is TODO.
 
 -->
 
@@ -56,40 +69,30 @@ For each bug, you should:
 * Link the pull request to the issue on GitHub
 * Merge the pull request into the main branch of REPO on GitHub
 
-
-### FiveStudents Requirements
-
-A fast food store wants to create a software called FiveStudents to take care of fast food orders. The shop makes three types of fast food items: `HotDog`, `Hamburger`, and `Sandwich`. A `HotDog` has 520 calories, a `Hamburger` has 870 calories, and a `Sandwich` has 290 calories. Each fast food item can have any number of toppings (multiple toppings of the same type are allowed). The shop offers three types of toppings: `GrilledOnions`, ` GrilledMushrooms
-`, and `JalapenoPeppers`. Adding toppings increases the calories of a fast food item. The `GrilledOnions` topping increases calories by 10 each time it is added to the fast food item. The `GrilledMushrooms` topping increases calories by 20 each time it is added. The `JalapenoPeppers` topping increases calories by 5 each time it is added. When the FiveStudents software creates a fast food item we want to compute the calories of the item and its description. For example, if a customer orders a hotdog with grilled mushrooms and jalapeno peppers, the calories of the item are 545 and the description for the item is `hotdog grilled mushrooms jalapeno peppers`. The `FiveStudents` system computes the calories using the `getCalories` method from the `FastFoodItem` class and generates the fast food item description using the `getDescription` method from the same class. The FiveStudents software creates fast food items using two inputs: the fast food item type (i.e., `hotdog`, `hamburger`, or `sandwich`) and the toppings (e.g., `grilledmushrooms,jalapenopeppers`). The list of toppings is comma separated. The software makes the fast food item using the `makeFastFoodItem(String,String)` method.
-
-#### Running the FiveStudents Software
-In REPO, you can run the FiveStudents software from the terminal using:
-*
-`./gradlew run --args='hotdog grilledmushrooms,jalapenopeppers'`.
-
-With these parameters, the output of the system will be:
-
-```
-545
-hotdog grilled mushrooms jalapeno peppers
-```
-
-### Performing and Submitting the Solution
-
 * Perform and submit your solution by:
 	* Following the instructions in this assignment and the video tutorial
 	* Pushing all the branches to the remote repository
 	* Submitting the commit ID of your solution on Gradescope. You can get your commit ID by running `git log -1`. (The commit ID you should be submitting is the one corresponding to the pull request of `fix2` being merged into `main`.)
 	* Do not delete the `fix1` and `fix2` branches after performing the pull requests.
 
-### Notes
-* We provide a video tutorial for this lab at this [link](https://mediaspace.umn.edu/media/t/1_hqshzij9), courtesy of Dr. Mattia Fazzini.
-* Before submitting, make sure that your code compiles
-* You can perform multiple commits as you produce your solution. This is not only fine, but actually very much encouraged.
+Make sure your code compiles!
 
-### Additional References
-* [GitHub Issues](https://guides.github.com/features/issues/)
-* [GitHub Pull Requests](https://guides.github.com/activities/hello-world/)
+### FiveStudents Specification
+
+- The shop makes three types of fast food items: `HotDog`, `Hamburger`, and `Sandwich`.
+- A `HotDog` has 520 reward points earned, a `Hamburger` has 870 reward points, and a `Sandwich` has 290 reward points.
+- Each fast food item can have any number of toppings (multiple toppings of the same type are allowed).
+- The shop offers three types of toppings: `GrilledOnions`, ` GrilledMushrooms`, and `JalapenoPeppers`.
+- Adding toppings increases the total reward points earned by purcahasing a fast food item.
+    - The `GrilledOnions` topping increases the total reward points by 10 each time it is added to the fast food item.
+    - The `GrilledMushrooms` topping increases total by 20 each time it is added.
+    - The `JalapenoPeppers` topping increases total by 5 each time it is added.
+- The software will take in two arguments. All arguments will be lowercase.
+    - The first argument will be the name of the fast food item (`hotdog`, `hamburger`, or `sandwich`).
+    - The second argument will be a comma-seperated list of toppings for the fast food item, without spaces (Example: `grilledmushrooms,jalapenopeppers`).
+- The software will print out information about the fast food item.
+    - The first line will contain the number of total reward points earned by purchasing the item.
+    - The second line will contain a description of the fast food item, made up of the item name followed by the names of it's toppings, seperated by spaces (Example: `hotdog grilled mushrooms jalapeno peppers`).
 
 [^1]: Pull Requests are also called "Change Requests" sometimes. Change Request is closer to what it actually means now. You are requesting a change to the code. "Pull Request" comes from before large Git remote platforms like GitHub. You would ask another person to "Pull" your code into the repository on their computer.
 
