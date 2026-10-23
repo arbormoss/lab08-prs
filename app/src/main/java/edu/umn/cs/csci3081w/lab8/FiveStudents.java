@@ -22,7 +22,7 @@ public class FiveStudents {
       return;
     }
     else {
-      System.out.println(fastFoodItem.getCalories());
+      System.out.println(fastFoodItem.getRewardPoints());
       System.out.println(fastFoodItem.getDescription());
     }
   }

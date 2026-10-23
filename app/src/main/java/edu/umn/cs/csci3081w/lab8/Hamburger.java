@@ -3,12 +3,12 @@ package edu.umn.cs.csci3081w.lab8;
 public class Hamburger extends FastFoodItem {
 
   public Hamburger() {
-    calories = 835;
+    rewardPoints = 835;
   }
 
   @Override
-  public int getCalories() {
-    return calories;
+  public int getRewardPoints() {
+    return rewardPoints;
   }
 
   @Override

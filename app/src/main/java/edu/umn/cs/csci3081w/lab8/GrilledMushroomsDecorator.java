@@ -4,12 +4,12 @@ public class GrilledMushroomsDecorator extends ToppingDecorator {
 
   public GrilledMushroomsDecorator(FastFoodItem fastFoodItem){
     super(fastFoodItem);
-    calories = 20;
+    rewardPoints = 20;
   }
 
   @Override
-  public int getCalories(){
-    return calories+ fastFoodItem.getCalories();
+  public int getRewardPoints(){
+    return rewardPoints + fastFoodItem.getRewardPoints();
   }
 
   @Override

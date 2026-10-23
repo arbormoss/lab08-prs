@@ -3,12 +3,12 @@ package edu.umn.cs.csci3081w.lab8;
 public class HotDog extends FastFoodItem {
 
   public HotDog() {
-    calories = 520;
+    rewardPoints = 520;
   }
 
   @Override
-  public int getCalories() {
-    return calories;
+  public int getRewardPoints() {
+    return rewardPoints;
   }
 
   @Override

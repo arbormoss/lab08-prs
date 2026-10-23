@@ -4,12 +4,12 @@ public class JalapenoPeppersDecorator extends ToppingDecorator {
 
   public JalapenoPeppersDecorator(FastFoodItem fastFoodItem){
     super(fastFoodItem);
-    calories = 5;
+    rewardPoints = 5;
   }
 
   @Override
-  public int getCalories(){
-    return calories+ fastFoodItem.getCalories();
+  public int getRewardPoints(){
+    return rewardPoints + fastFoodItem.getRewardPoints();
   }
 
   @Override
