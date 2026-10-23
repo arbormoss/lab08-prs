@@ -10,8 +10,8 @@ The goal of this assignment is to get comfortable using GitHub Issues and Pull R
 
 GitHub Issues are like a discussion board attached to the repository.
 They can be used to plan work, report bugs, and talk about the project.
-Pull requests are a request to merge changes from one branch onto another branch (usually merge changes from a development branch onto `dev` or `main`).
-They have a description to describe the purpose of the changes and what changes are made.
+Pull requests are a request to merge changes from one branch onto another branch (usually `main`).
+They describe the purpose of the changes and what changes are made.
 
 While you aren't working with other people here, remember that the goal of using issues and pull requests is to communicate with other people working on the project.
 
@@ -39,8 +39,8 @@ In this lab, you will be doing both sides.
 Make sure to do these steps **twice**:
 
 1. Find a bug in the software.
-2. Create a GitHub issue to report the bug on Github.
-    - You should add a **title, a summary of the bug, a version of the FiveStudents software (1.0), the operating system, steps to reproduce the bug, the expected behavior, and the observed behavior.**
+2. Create a GitHub Issue to report the bug on Github.
+    - You should add a **title, a summary of the bug, your version of the FiveStudents software (1.0), your operating system, steps to reproduce the bug, the expected behavior, and the observed behavior.**
 3. Label the issue as a bug and assign the issue to yourself on GitHub.
 4. Fix the bug in the code.
     - Make your changes for the first bug on a branch called `fix1`, and a branch called `fix2` for the second bug.
@@ -61,6 +61,8 @@ Push all your branches to Github, and submit the final commit ID[^2] on gradesco
 Make sure your code compiles!
 
 ### FiveStudents Specification
+
+_This is the same as from Lab 7. You don't have to re-read it if you don't want to._
 
 - The shop makes three types of fast food items: `HotDog`, `Hamburger`, and `Sandwich`.
 - A `HotDog` has 520 reward points earned, a `Hamburger` has 870 reward points, and a `Sandwich` has 290 reward points.
