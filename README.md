@@ -53,7 +53,7 @@ Make sure to do these steps **twice**:
 The [Video Walkthrough](TODO!!) shows how to do each of these steps for the first bug.
 You will need to do these steps again for the second bug on your own.
 
-**The first bug can be found with the input `hamburger gilledmushrooms`.**
+**The first bug can be found with the input `hamburger grilledmushrooms`.**
 You will need to find the second bug on your own.
 
 Push all your branches to Github, and submit the final commit ID[^2] on gradescope.
